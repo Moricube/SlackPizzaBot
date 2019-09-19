@@ -166,37 +166,6 @@ class Handler {
     } catch (e) {
       console.log(e);
     }
-    // return await this.handlerPromise('orders', '*', '');
-    // this.db.select('orders', '*', '', (err, result) => {
-    //   if (err) throw err;
-    //   let order = result;
-
-    //   order.forEach(element => {
-    //     try {
-    //       let result = await this.handlerPromise('orders_pizzas', '*', {order_id: element.id});
-    //     } catch (e) {
-    //       console.log(e);
-    //     };
-    //     // this.db.select('orders_pizzas', '*', {order_id: element.id}, (err, result) => {
-    //     //   if (err) throw err;
-    //     //   let pizzas = result;
-
-    //     //   pizzas.forEach(element => {
-    //     //     this.db.select('pizzas', '*', {id: element.pizza_id}, (err, result) => {
-    //     //       element.pizza_name = result[0].name;
-    //     //     });
-    //     //   });
-          
-    //     //   this.help.push({
-    //     //     order: element,
-    //     //     pizzas: pizzas
-    //     //   });
-    //     // });
-    //   });
-    // });
-
-
-    // return this.help;
   }
 
   dbSelect(...params) {
